@@ -4,7 +4,6 @@ main :: IO ()
 main = do
   input <- readFile "input.txt"
   let numbers = map parseLine (lines input)
-  print numbers
   print $ sum numbers
 
 parseLine :: String -> Int
